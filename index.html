@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -20,12 +19,12 @@
     <header>
         <div class="header-container-wrapper">
             <div class="header-inner">
-                <div class="logo">Furisode-AI</div>
+                <div><p><span class="logo">Furisode</span> -AI</p></div>
                 <nav class="nav-menu">
                     <ul class="nav-links">
                         <li><a href="#solution">強み</a></li>
-                        <li><a href="#process">流れ</a></li>
-                        <li><a href="#pricing">料金</a></li>
+                        <li><a href="#process">ご利用の流れ</a></li>
+                        <li><a href="#pricing">料金プラン</a></li>
                         <li><a href="#contact">お問い合わせ</a></li>
                     </ul>
                 </nav>
@@ -35,8 +34,9 @@
 
     <section class="hero" id="hero">
         <div class="container">
-            <p>もう、トルソー撮影で満足しなくていい。</p>
-            <h1>先端のAI画像生成技術で、<br class="u-pc-only">振袖在庫が魅力的な着用画像に生まれ変わります。</h1>
+            <!-- <p>もう、トルソー撮影で満足しなくていい。</p> -->
+            <p id="typing-text" class="typing"></p>
+            <h1>振袖を、もっと魅力的に。AIの力で理想の着用画像を実現します。</h1>
 
             <div class="hero-visual">
                 <div class="before-wrap">
@@ -83,12 +83,12 @@
                 <div class="issue-card">
                     <div class="issue-icon"><i class="fas fa-camera"></i></div>
                     <h3>自社撮影は<br>工数と費用がかさむ</h3>
-                    <p>モデルのキャスティング、撮影、編集など、膨大な時間と人件費、スタジオ費用がかかり非効率です。</p>
+                    <p>モデルのキャスティング、撮影、編集…膨大な時間と人件費、スタジオ費用がかかり非効率です。</p>
                 </div>
                 <div class="issue-card">
                     <div class="issue-icon"><i class="fas fa-mobile-screen-button"></i></div>
                     <h3>サイトや広告バナーの<br>クオリティ低下</h3>
-                    <p>やむを得ず掲載するトルソーや衣紋掛の画像では、ユーザーの着用イメージが湧かず、サイトの魅力が半減してしまいます。</p>
+                    <p>トルソーや衣桁掛けの画像では着用イメージが湧かず、サイトの魅力が半減してしまいます。</p>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
     <section class="solutions" id="solution">
         <div class="container">
             <h2 class="section-title">FURISODE-AIが、すべて解決します。</h2>
-            <p class="section-subtitle">お手持ちの振袖在庫画像を、AIモデルが着用したハイクオリティな画像に瞬時に変換。<br>サイト閲覧ユーザーの満足度とコンバージョン率を大幅に高めます。</p>
+            <p class="section-subtitle">お手持ちの振袖画像を、AIモデルが着用したハイクオリティな画像に瞬時に変換。<br>サイト閲覧ユーザーの満足度とコンバージョン率を大幅に高めます。</p>
 
             <div class="solution-item">
                 <div class="solution-visual">
@@ -108,7 +108,7 @@
                     <div class="solution-num">01</div>
                     <h3>多種多様なモデルで<br>着用画像を生成可能</h3>
                     <p>
-                        最新のAI技術により、トルソー（マネキン）に着せた状態の振袖から、実際にモデルが着用しているような高品質な画像を生成します。日本人モデルはもちろん、貴社のターゲット層に合わせて様々な雰囲気のモデルを指定可能です。
+                        最新のAI技術により、振袖の衣桁掛け画像やトルソー着用画像、平置き画像から、実際にモデルが着用しているような高品質な画像を生成します。日本人モデルはもちろん、貴社のターゲット層に合わせて様々な雰囲気のモデルを指定可能です。
                     </p>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-num">02</div>
-                    <h3>サイトや広告バナーの<br>訴求力が大幅向上</h3>
+                    <h3>サイトや広告バナーの<br>訴求力が大幅に向上</h3>
                     <p>
                         モデル着用画像は、ユーザーに「自分も着てみたい」というイメージを強く呼び起こします。コレクションページにAIモデル画像が並ぶことでサイト全体のクオリティが大幅に向上し、来店予約に繋がります。
                     </p>
@@ -134,7 +134,7 @@
                     <div class="solution-num">03</div>
                     <h3>圧倒的なコストパフォーマンスと<br>スピード感</h3>
                     <p>
-                        モデル手配、ヘアメイク、カメラマン...。これらすべての工程をAIが代替。従来の撮影に比べ費用を約80%カット。納品も最短3営業日と、SNSやECサイトへのスピード展開をサポートします。
+                        モデルのキャスティング、ヘアメイク、カメラマン…。これらすべての工程をAIが代替。従来の撮影に比べ費用を約80%カット。納品も最短3営業日と、SNSやECサイトへのスピード展開をサポートします。
                     </p>
                 </div>
             </div>
@@ -152,14 +152,14 @@
     <section class="process" id="process">
         <div class="container">
             <h2 class="section-title">ご利用はとてもシンプル</h2>
-            <p class="section-subtitle">最短 3日で、AIモデル着用画像を納品<br>振袖在庫画像をご提供いただき、あとはお待ちいただくだけです。</p>
+            <p class="section-subtitle">最短３日で、AIモデル着用画像を納品。<br class="u-pc-only">振袖画像をご提供いただき、あとはお待ちいただくだけです。</p>
 
             <div class="process-grid">
                 <div class="process-card">
                     <span class="process-step">STEP 01</span>
                     <div class="process-icon"><i class="fas fa-file-arrow-up"></i></div>
-                    <h3>画像のご提供</h3>
-                    <p>振袖の衣桁画像、またはトルソー着用画像をオンラインで共有いただきます。多角的な画像である必要はありません。</p>
+                    <h3>画像をご提供ください</h3>
+                    <p>振袖の衣桁掛け画像、トルソー着用画像、平置き画像のいずれかをご準備ください。多角的な画像である必要はありません。画像はオンラインでアップロードすればOK。</p>
                     <!-- 画像パス維持: flow-01.png -->
                     <img src="image/flow-01.png" alt="画像提供" class="step-img" 　style="width: auto; height: 100px; object-fit: contain;">
                 </div>
@@ -169,8 +169,8 @@
                 <div class="process-card">
                     <span class="process-step">STEP 02</span>
                     <div class="process-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
-                    <h3>12種類の AI 画像生成と納品</h3>
-                    <p>振袖の柄データから、12種の異なるAIモデル（ロケ・スタジオなど）の全身・バストアップ画像を生成・納品。豊富なバリエーションから、貴社のコンセプトに最適な画像をお選びいただけます。</p>
+                    <h3>12種類のAI画像生成と納品</h3>
+                    <p>ご支給いただいた振袖の画像を元に、12種の異なるAIモデル（ロケ・スタジオなど）の全身・バストアップ画像を生成して納品。豊富なバリエーションから、貴社のコンセプトに最適な画像をお選びいただけます。</p>
                     <!-- 画像パス維持: flow-02.png -->
                     <img src="image/flow-02.png" alt="AI画像生成例" class="step-img" style="width: auto; height: 100px; object-fit: contain;">
                 </div>
@@ -181,7 +181,7 @@
                     <span class="process-step">STEP 03</span>
                     <div class="process-icon"><i class="fas fa-circle-check"></i></div>
                     <h3>サイト掲載などご自由にご活用ください</h3>
-                    <p>貴社サイトの「振袖コレクション」ページにすぐに掲載可能です。</p>
+                    <p>貴社サイトの「振袖コレクション」ページなどにすぐに掲載可能です。</p>
                     <!-- 画像パス維持: flow-03.png -->
                     <img src="image/flow-03.jpg" alt="サイト掲載" class="step-img" style="width: auto; height: 100px; object-fit: contain;">
                 </div>
@@ -438,8 +438,8 @@
         <div class="container note-box">
             <h4>AIモデル生成技術の進化とサービス更新について</h4>
             <p class="note-text">
-                FURISODE-AI の技術は、高度な画像AIモデル生成技術にあります。AI技術は日進月歩で進化しており、より高解像度でリアルなAIモデルが絶えず開発されています。<br>
-                そのため、私たちは常にお客様へ最高のクオリティを提供し続けるために、基盤となるAI技術（AIモデル）を継続的にアップデートしています。<br>
+                FURISODE-AIは、高度なAI画像生成技術を活用して振袖着用画像を提供するサービスです。AI技術は日進月歩で進化しており、より高解像度でリアルなAIモデルが絶えず開発されています。<br class="u-pc-only">
+                そのため、私たちは常にお客様へ最高のクオリティを提供し続けるために、基盤となるAI技術（AIモデル）を継続的にアップデートしています。<br class="u-pc-only">
                 この技術更新に伴い、サービスの機能や提供されるAIモデルのバリエーション、画質の向上など、提供内容が予告なく変更・更新される場合がございます。これは、お客様に常に最新かつ最高のAIモデル生成画像をお届けするための、私たちのコミットメントです。
             </p>
         </div>
@@ -451,12 +451,12 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <!-- 画像パス維持: company-logo.jpg -->
-                    <img src="image/company-logo.jpg" alt="Human Communication Partners 半田中央印刷株式会社">
+                    <img src="image/hcp-logo.png" alt="Human Communication Partners 半田中央印刷株式会社">
                     <h2>HCP</h2>
                     <p>半田中央印刷株式会社</p>
                     <div class="footer-meta">
                         <p>〒475-0032<br>愛知県半田市潮干町1番地の21</p>
-                        <p class="footer-tel">TEL: <br>0569-29-2525</p>
+                        <p class="footer-tel">0569-29-2525</p>
                         <a href="https://handa-cp.co.jp/" class="footer-link-btn" target="_blank" rel="noopener noreferrer">会社ホームページ</a>
                     </div>
                 </div>

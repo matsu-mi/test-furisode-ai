@@ -185,6 +185,11 @@ header {
     align-items: center;
 }
 
+.header-inner p {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 .logo {
     font-family: 'Great Vibes', cursive;
     font-size: 2.2rem;
@@ -211,9 +216,9 @@ header {
 }
 
 .hero h1 {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.4;
 }
 
@@ -702,16 +707,18 @@ header {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
     background-color: #fcfcfc;
+    /* 0.4sから0.6sにして、イージングを滑らかに変更 */
+    transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
+    /* 500pxは予備の高さ。中身がこれより短ければ自動で止まる */
+    max-height: 500px; 
 }
 
 .faq-answer-inner {
-    padding: 0 0 25px 45px;
+    padding: 20px 0 25px 45px;
     display: flex;
     align-items: flex-start;
 }
@@ -918,7 +925,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-bottom: 10px;
     filter: grayscale(100%) brightness(200%);
@@ -928,13 +935,16 @@ footer {
     display: none;
 }
 
-.footer-meta {
-    margin-top: 20px;
-    font-size: 0.8rem;
+.footer-logo p {
+    font-size: 1rem;
 }
 
-.footer-tel {
-    font-size: 1.2rem;
+.footer-meta {
+    margin-top: 20px;
+}
+
+.footer-meta .footer-tel {
+    font-size: 2rem;
     font-weight: bold;
     margin: 5px 0;
 }
@@ -953,6 +963,7 @@ footer {
 }
 
 .footer-link-btn {
+    font-size: 1rem;
     border: 1px solid #fff;
     padding: 5px 15px;
     display: inline-flex;
@@ -960,12 +971,12 @@ footer {
     justify-content: center;
     border-radius: 20px;
     margin-top: 10px;
-    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    /* transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; */
 }
 
 .footer-link-btn:hover {
     background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-1px);
+    /* transform: translateY(-1px); */
 }
 
 .copyright {
@@ -1484,4 +1495,21 @@ h3 {
     color: #333 !important;
     margin-bottom: 20px !important;
     /* その他、統一したいデザインを全部書く */
+}
+
+
+.typing {
+    font-size: 2.5rem; /* サイズは好きに変えてね */
+    font-weight: bold;
+    border-right: 2px solid var(--primary-pink); /* カーソル代わりの線 */
+    padding-right: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    /* カーソルを点滅させるアニメーション */
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: var(--primary-pink); }
 }
