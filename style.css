@@ -369,7 +369,7 @@ header {
 .solution-num {
     font-size: 6rem;
     font-weight: 900;
-    background: linear-gradient(180deg, rgba(255, 144, 185, 0.4) 0%, rgba(255, 144, 185, 0.05) 100%);
+    /* background: linear-gradient(180deg, rgba(255, 144, 185, 0.4) 0%, rgba(255, 144, 185, 0.05) 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
@@ -994,7 +994,7 @@ footer {
     }
 
     .header-container-wrapper {
-        padding: 10px 18px;
+        padding: 15px 18px;
     }
 
     .nav-links {
