@@ -1,3 +1,15 @@
+// solution-num スクロールアニメーション
+function showSolutionNumsOnScroll() {
+	const nums = document.querySelectorAll('.solution-num');
+	nums.forEach(num => {
+		const rect = num.getBoundingClientRect();
+		if (rect.top < window.innerHeight - 60) {
+			num.classList.add('is-visible');
+		}
+	});
+}
+window.addEventListener('scroll', showSolutionNumsOnScroll);
+window.addEventListener('DOMContentLoaded', showSolutionNumsOnScroll);
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function() {
