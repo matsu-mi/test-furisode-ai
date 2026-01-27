@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		{ display: "トルソー", kana: ["と", "る", "そ", "ー"], roma: ["t", "r", "s", ""] },
 		{ display: "撮影", kana: ["さ", "つ", "え", "い"], roma: ["s", "t", "", ""] },
 		{ display: "で", kana: ["で"], roma: ["d"] },
+		{ display: "<br class='br-sp'>", kana: ["<br class='br-sp'>"], roma: [""] },
 		{ display: "満足", kana: ["ま", "ん", "ぞ", "く"], roma: ["m", "n", "z", "k"] },
 		{ display: "し", kana: ["し"], roma: ["s"] },
 		{ display: "な", kana: ["な"], roma: ["n"] },
@@ -122,5 +123,23 @@ document.addEventListener('DOMContentLoaded', function() {
 		};
 		// タイピング開始
 		type();
+	}
+
+	// ハンバーガーメニュー開閉
+	const navToggle = document.querySelector('.nav-toggle');
+	const navMenu = document.querySelector('.nav-menu');
+	if (navToggle && navMenu) {
+		navToggle.addEventListener('click', function() {
+			const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+			navToggle.setAttribute('aria-expanded', !expanded);
+			navMenu.classList.toggle('active');
+		});
+		// メニュークリックで自動的に閉じる（スマホ用）
+		navMenu.querySelectorAll('a').forEach(link => {
+			link.addEventListener('click', () => {
+				navMenu.classList.remove('active');
+				navToggle.setAttribute('aria-expanded', 'false');
+			});
+		});
 	}
 });
