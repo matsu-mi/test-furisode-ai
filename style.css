@@ -226,7 +226,7 @@ header {
     backdrop-filter: blur(8px);
     border-radius: var(--radius-md);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    padding: 10px 30px;
+    padding: 10px;
     /* height指定は不要。ロゴの高さ＋余白で自動調整 */
 }
 
@@ -261,7 +261,9 @@ header {
 }
 
 .logo-furisode {
-    font-family: 'Great Vibes', cursive;
+    font-family: serif;
+    font-feature-settings: "palt";
+    font-size: 0.8em;
     font-weight: 700;
     padding-top: 10px;
 }
@@ -269,7 +271,7 @@ header {
 .logo-ai {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 .nav-links {
     display: flex;
@@ -316,6 +318,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
+    z-index: 5000;
   }
   .header-inner {
     width: 100%;
@@ -475,7 +478,7 @@ header {
     border-radius: 25px;
     font-size: 0.8rem;
     font-weight: 700;
-    z-index: 100;
+    z-index: 20;
     color: white;
 }
 
@@ -764,13 +767,14 @@ header {
     .process-grid {
         display: flex;
         flex-direction: column;
+        align-items: center; /* カードを中央に寄せる場合 */
+        gap: 30px; /* 縦並びの時のカード同士の間隔を少し広げてもいいかも */
     }
 
     .process-arrow {
         display: none;
     }
 }
-
 /* --- 料金セクション --- */
 .pricing {
     padding: 120px 0;
